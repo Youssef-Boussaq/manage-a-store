@@ -1,0 +1,25 @@
+#  the customer's name
+for j in range(0,4):
+   name = str(input(f"what is  the customer's name{j+1}  "  ))
+  # nember  article
+   x=int(input("write nember of article : "))
+   nemberarticle=[]
+   T=0
+   for i in range(0,x):
+       if x>0:
+        price=float(input("write the price of article :" ))
+       #price with tva
+        tva=price*0.15
+        #price total
+        pt=price +tva
+        #remise
+        r=pt*0.02
+        #final price
+        fpt=pt-r
+        nemberarticle.append(fpt) 
+        T=T+nemberarticle[i]
+   print("the total to be paid for customer ",name,T,"mad")
+
+     
+
+
